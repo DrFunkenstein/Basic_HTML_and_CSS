@@ -1,0 +1,25 @@
+
+Head:
+Early days of computer science.
+
+Nav Bar
+
+Body:
+{short introduction
+
+Pictures
+early ram, hard drives, processors,
+
+
+Videos
+
+Links
+
+Contact (get user input)
+}
+
+Footer:
+copyright info.
+
+Back to top Nav element
+
