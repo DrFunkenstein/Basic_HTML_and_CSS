@@ -1,0 +1,38 @@
+body {
+    background-color:black;
+    color:green;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.2em;
+
+}
+header {
+    text-align:center;
+}
+
+#top {  /*HEADING*/
+    font-size: 5em;
+}
+
+.intro {
+   text-decoration: underline overline dashed green;
+   line-height: 1.5em;
+}
+
+/*===============CONTACT FORM=====================*/
+
+
+
+.form-heading {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 900;
+}
+
+.contact-field {
+    font-weight: 700;
+    width: 300px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    border: green dashed;
+    border-radius: 0.5em;
+}
