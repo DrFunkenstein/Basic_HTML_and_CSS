@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jon Shaw | Developer</title>
+        <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+    </head>
+
+<!--Body-->
+<body class="Background">
+
+<!--Navbar-->
+    <div class="Navbar">
+        <a class="active" href="Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a href="#Contact">Contact</a>    
+    </div>
+
+<!--Home -->
+        <br>
+        <br>
+
+<!--Video-->
+    <div id="Home">
+        <video autoplay muted loop id="cover_vid"> <!-- Changed Typing video to Cover video-->
+            <source src="./vids/cover_vid4.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+<!-- Video text -->
+    <div class="Video_Text">
+        <h1 style="color:white;">Jon Shaw | Developer</h1>
+        <p>
+            <strong>
+                <center>
+                    <q></q>
+                    <br>
+                    Welcome to my portfolio! Let me tell you a little about my background and experience.<br>
+                    <br>Thanks for stopping by and enjoy!
+                </center>
+            </strong>
+        </p>
+    </div>  
+    
+<!-- About section-->
+    <div class="Row" id="About">
+        <div class="Column_2"> <!-- left column-->
+            <img class="pics" src="./pics/about_pic1.jpeg" alt="about pic here">
+        </div>
+
+        <div id="about" class="Column_1">
+                
+            <h1 >About</h1>
+                <p>I'm a software developer from Portland Oregon, with a passion for computers and technology.
+                <br><br>
+                I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Bootcamp, trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, and more.  I also hold a Bachelor's of Music from <a href="https://www.wou.edu">Western Oregon University</a><br><br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
+        </div>
+    </div>
+
+<!-- Github section-->
+    <div class="Row" id ="GitHub">
+        <div id="github" class="Column_1">
+            <h1 id="gh_h1">GitHub</h1>
+                <p id="gh_p">You can view my coding projects on my GitHub profile here:<br>
+                <center><a href="https://github.com/JSpdx/" target="_blank">My GitHub</a></center></p>
+        </div>
+        
+        <div class="Column_2">
+            <a href="https://github.com/JSpdx" target="_blank"><img class="pics" src="./pics/github_pic.jpg" alt="GitHub"></a>
+        </div>
+    </div>
+
+
+<!--Contact Section-->
+    <div class="Row" id="Contact">
+        <div class="Column_3"> <!--Contact image left column-->
+            <video autoplay muted loop id="contact_vid" src="./vids/contact1.mp4" alt="Contact_Image">
+        </div>
+
+        <div id="about" class="Column_4"> <!--Contact form, right "column -->
+            <h1>Contact</h1>
+                <form action="" method="get"> <!--where to send form-->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" placeholder="Email">
+                    <label>Message:</label>
+                        <input type="text" placeholder="Message">
+                        <input type="submit" value="Submit">
+                </form>
+        </div>
+    </div>
+
+<!--Footer Section-->
+    <footer>
+        <p>
+           
+        </p>
+    </footer>
+
+</body>
+
+</html>

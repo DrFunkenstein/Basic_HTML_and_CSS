@@ -99,14 +99,30 @@
     </div>
 
     <!--/container 1-->
-
+<style>
+.test{
+    height: 230px;
+    overflow: hidden;
+    text-align: center;
+}
+.thumbnail{
+    min-height: 100%;
+    min-width: 100%;
+    width:auto;
+    position:relative; 
+    left:50%; 
+    transform: translateX(-50%)
+}
+</style>
     <!--Movie images-->
     <div class="container">
     <h2 class="">Show Times:</h2>
     <div class="card-deck">
         
         <div class="card">
-          <img src="./img/beautyandthebeast.jpg" class="card-img-top rounded-sm" alt="Card image cap" >
+            <div class="test">
+          <img src="./img/beautyandthebeast.jpg" class="thumbnail card-img-top rounded-sm" alt="Card image cap" >
+        </div>
           <div class="card-block">
             <h5 class="card-title">Beauty and the Beast</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -120,8 +136,10 @@
           </div>
         </div>
         <div class="card">
-          <img src="./img/ghostintheshell.jpg" class="card-img-top rounded-sm" alt="Card image cap">
-          <div class="card-block">
+           <div class="test">
+            <img src="./img/ghostintheshell.jpg" class="thumbnail card-img-top rounded-sm" alt="Card image cap">
+        </div>
+            <div class="card-block">
             <h5 class="card-title">Ghost in the Shell</h5>
             <p class="card-text">A cautionary tale about Google Glass</p>
             <span class="badge badge-pill badge-info">12:00pm</span>
@@ -134,7 +152,9 @@
           </div>
         </div>
         <div class="card">
-          <img src="./img/kongskullisland.jpg" class="card-img-top rounded-sm" alt="Card image cap">
+             <div class="test">
+          <img src="./img/kongskullisland.jpg" class="thumbnail card-img-top rounded-sm" alt="Card image cap">
+        </div>
           <div class="card-block">
             <h5 class="card-title">Kong: Skull Island</h5>
             <p class="card-text">This movie is bananas. Don't miss this very a-peeling flick</p>
