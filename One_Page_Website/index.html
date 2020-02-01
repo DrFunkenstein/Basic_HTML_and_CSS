@@ -27,71 +27,135 @@
 		<main>
 		<!--GALLERY-->
 			<h2 id="gallery">Photo Gallery</h2>
-			<!--PHOTO 1-->
-				<img src="./pictures/thumbnail_1.jpg" >
-				<p>Mercury delay tubes were used as a form of memory storage.<br>
-				   Bits were converted to sound waves by transducers, passed through a mercury solution, which slowed down the wave, then picked up by another set of transducers, and looped back to the beginning.<br>
-				   </p>
-			<!--END CONTAINER-->
 			
-			<!--PHOTO 2-->
-				<img src="./pictures/thumbnail_2.jpg" >
-				<p>Charles Babbage's 1st Difference Engine.<br>
-				   
-				 </p>
-			<!--END CONTAINER-->
-			
-			<!--PHOTO 3-->
-				<img src="./pictures/thumbnail_3.jpg" width="600" height="400">
-				<p>The Bombe designed by Alan Turing. This device helped the British decipher machine&hyphen;encrypted <br>
-					messages during WWII.
-				</p>
-			<!--END CONTAINER-->
-			
-			<!--PHOTO 4-->
-				<img src="./pictures/thumbnail_4.jpg" width="600" height="400">
-				<p>From left to right; ENIAC, EDVAC, ORDVAC, and BRLESC-I boards<br>
-				  A demonstration of the trend towards miniaturization</p>
-			<!--END CONTAINER-->	
-			
-			<!--PHOTO 5-->
-				<img src="./pictures/thumbnail_5.jpg" width="600" height="400">
-				<p>The Apple&hyphen;I. In the mid to late 70's the trend towards personal computers began to grow</p>
-			<!--END CONTAINER-->
-		
-			<!--PHOTO 6-->
-				<img src="./pictures/thumbnail_6.jpg" width="600" height="400">
-				<p>Magnetic Drum Memory from a UNIVAC computer.<br>
-				   A precursor to modern HDDs</p>
-			<!--END CONTAINER-->
-			
-			<!--PHOTO 7-->
-				<img src="./pictures/thumbnail_7.jpg" width="600" height="400">
-				<p>The future is now. Google's quantum computer.<br> Able to solve what a virtually impossible problem in 200 seconds</p>
+            <div class='row'>
+                <div class='column picWidth'>
+                    <img src="./pictures/thumbnail_1.jpg" onclick='openModal();currentSlide(1)' class='hover-shadow'>
+                </div>
+                <div class='column picWidth'>
+                    <img src="./pictures/thumbnail_2.jpg" onclick='openModal();currentSlide(2)' class='hover-shadow'>
+                </div>
+                <div class='column picWidth'>
+                    <img src="./pictures/thumbnail_3.jpg" onclick='openModal();currentSlide(3)' class='hover-shadow'>
+                </div>
+                <div class='column picWidth'>
+                    <img src="./pictures/thumbnail_4.jpg" onclick='openModal();currentSlide(4)' class='hover-shadow'>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='column picWidth'>
+                    <img src="./pictures/thumbnail_5.jpg" onclick='openModal();currentSlide(5)' class='hover-shadow'>
+                </div>
+                <div class='column picWidth'>
+                    <img src="./pictures/thumbnail_6.jpg" onclick='openModal();currentSlide(6)' class='hover-shadow'>
+                </div>
+                <div class='column picWidth'>
+                    <img src="./pictures/thumbnail_7.jpg" onclick='openModal();currentSlide(7)' class='hover-shadow'>
+                </div>
+            </div>
+            
+            <!--Lightbox-->
+            <div id='myModal' class='modal'>
+                <span class='close cursor' onclick='closeModal()'>&times;</span>
+                <div class='modal-content'>
+
+                    <div class='mySlides'>
+                        <div class='numbertext'> 1/ 7</div>
+                        <img src="./pictures/thumbnail_1.jpg" >
+                    </div>
+
+                    <div class='mySlides'>
+                        <div class='numbertext'> 2/ 7</div>
+                        <img src="./pictures/thumbnail_2.jpg" >
+                    </div>
+
+                    <div class='mySlides'>
+                        <div class='numbertext'> 3/ 7</div>
+                        <img src="./pictures/thumbnail_3.jpg" >
+                    </div>
+
+                    <div class='mySlides'>
+                        <div class='numbertext'> 4/ 7</div>
+                        <img src="./pictures/thumbnail_4.jpg" >
+                    </div>
+
+                    <div class='mySlides'>
+                        <div class='numbertext'> 5/ 7</div>
+                        <img src="./pictures/thumbnail_5.jpg" >
+                    </div>
+
+                    <div class='mySlides'>
+                        <div class='numbertext'> 6/ 7</div>
+                        <img src="./pictures/thumbnail_6.jpg" >
+                    </div>
+
+                    <div class='mySlides'>
+                        <div class='numbertext'> 7/ 7</div>
+                        <img src="./pictures/thumbnail_7.jpg" >
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class='next' onclick="plusSlides(1)">&#10095;</a>
+                
+                    <!--caption text-->
+                    <div class='caption-container'>
+                        <p id='caption'></p>
+                    </div>
+
+                    <!--Thumbnail controls-->
+                    <div class='column'>
+                        <img class="demo picWidthSml" src='./pictures/thumbnail_1.jpg' onclick='currentSlide(1)' alt=''>
+                    </div>
+
+                    <div class='column'>
+                        <img class="demo picWidthSml" src='./pictures/thumbnail_2.jpg' onclick='currentSlide(2)' alt=''>
+                    </div>
+
+                    <div class='column'>
+                        <img class="demo picWidthSml" src='./pictures/thumbnail_3.jpg' onclick='currentSlide(3)' alt=''>
+                    </div>
+
+                    <div class='column'>
+                        <img class="demo picWidthSml" src='./pictures/thumbnail_4.jpg' onclick='currentSlide(4)' alt=''>
+                    </div>
+
+                    <div class='column'>
+                        <img class="demo picWidthSml" src='./pictures/thumbnail_5.jpg' onclick='currentSlide(5)' alt=''>
+                    </div>
+
+                    <div class='column'>
+                        <img class="demo picWidthSml" src='./pictures/thumbnail_6.jpg' onclick='currentSlide(6)' alt=''>
+                    </div>
+
+                    <div class='column'>
+                        <img class="demo picWidthSml" src='./pictures/thumbnail_7.jpg' onclick='currentSlide(7)' alt=''>
+                    </div>
+                </div>
+            </div>
 			<!--END CONTAINER-->
 		<!--END GALLERY-->
 			
 		<!--VIDEOS-->
-		<h2 id="videos">Informational Videos</h2>
+		 <h2 id="videos">Informational Videos</h2> -->
 			<!--VIDEO 1-->
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/RKYWKKp9mK8" frameborder="0" 
+			 <iframe width="560" height="315" src="https://www.youtube.com/embed/RKYWKKp9mK8" frameborder="0" 
 			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<p>Babbage's Difference Engine in action</p>
+			<p>Babbage's Difference Engine in action</p> -->
 			<!--END VIDEO-->
 			
 			<!--VIDEO 2-->
 			
-			 <iframe width="560" height="315" src="https://www.youtube.com/embed/ecIWPzGEbFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+			  <iframe width="560" height="315" src="https://www.youtube.com/embed/ecIWPzGEbFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 			 allowfullscreen></iframe>
 			<p>A great talk from developer and author Bob Martin about the beginnings of the software industry<br>
-			   and where it's headed</p>
+			   and where it's headed</p> -->
 			<!--END VIDEO-->
 			
 			<!--VIDEO 3-->
 			
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/ZBZnSteT72A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+			 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZBZnSteT72A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 			allowfullscreen></iframe>
-			<p>Excellent video on the evolution of computing</p>
+			<p>Excellent video on the evolution of computing</p> -->
 			<!--END VIDEO-->
 		<!--END VIDEO SECTION-->
 		
@@ -128,5 +192,7 @@
 			<a href="#top">Back To Top</a>
 			<p>&copy;Neuromancer Web Services, 2020</p>
 		</footer>		<!--END FOOTER-->	
+		<script src='JS/one_page_website.js'></script>
 	</body>
 </html>
+
